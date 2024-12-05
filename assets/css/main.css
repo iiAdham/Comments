@@ -6,8 +6,6 @@ body {
 
 .main-comment {
   padding-right: 20px;
-  border-right: 3px solid #ddd;
-  border-radius: 10px;
 }
 
 .Card_postComments {
@@ -20,22 +18,30 @@ body {
 .Card_postComments_item {
   margin-bottom: 15px;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
   position: relative;
+  border-right: 3px solid #ddd;
+  border-radius: 10px;
 }
 
 .replies {
-  margin-top: 10px;
-  margin-right: 30px;
+  margin-right: 3px;
 }
 
 .reply_post {
   margin-left: 30px;
-  margin-top: 10px;
   position: relative;
   padding-right: 20px;
-  border-right: 3px solid #ddd;
-  border-radius: 10px;
+  /* border-right: 3px solid #ddd; */
+  /* border-radius: 10px; */
+}
+
+.reply_post::before {
+  content: "";
+  position: absolute;
+  right: -17px;
+  height: 3px;
+  width: 26px;
+  background-color: #ddd;
 }
 
 .row {
@@ -162,4 +168,11 @@ textarea::placeholder {
 
 .card_sendComment button:hover {
   background-color: #0056b3;
+}
+
+.nested-replies {
+  padding: 0;
+  margin-right: 10px;
+  border-right: 3px solid #ddd;
+  border-radius: 10px;
 }
