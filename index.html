@@ -23,27 +23,42 @@
             <div class="Card_postComments_item">
                 <div class="row">
                     <!-- Comment Content -->
-                    <div class="col-12 d-flex">
-                        <div class="img">
-                            <img src="assets/images/guy.webp" alt="صورة المستخدم" />
+                    <div class="main-comment">
+                        <div class="col-12 d-flex">
+                            <div class="img">
+                                <img src="assets/images/guy.webp" alt="صورة المستخدم" />
+                            </div>
+                            <div class="name">
+                                <h2>محمد أحمد محمد</h2>
+                            </div>
                         </div>
-                        <div class="name">
-                            <h2>محمد أحمد محمد</h2>
+                        <div class="PostComment col-12">
+                            <p>هذا هو نص التعليق الأساسي.</p>
                         </div>
-                    </div>
-                    <div class="PostComment col-12">
-                        <p>هذا هو نص التعليق الأساسي.</p>
-                    </div>
-                    <div class="postCommentsAction d-flex">
-                        <span class="count me-2 time">منذ 3 دقائق</span>
-                        <button class="likeCount d-flex align-items-center">
-                            <p class="count me-2">10</p>
-                            <i class="fas fa-thumbs-up"></i>
-                        </button>
-                        <button class="commentCount d-flex align-items-center mx-3">
-                            <p class="count me-2">5</p>
-                            <i class="fas fa-reply"></i>
-                        </button>
+                        <div class="postCommentsAction d-flex">
+                            <span class="count me-2 time">منذ 3 دقائق</span>
+                            <button class="likeCount d-flex align-items-center">
+                                <p class="count me-2">10</p>
+                                <i class="fas fa-thumbs-up"></i>
+                            </button>
+                            <button class="commentCount d-flex align-items-center mx-3">
+                                <p class="count me-2">5</p>
+                                <i class="fas fa-reply"></i>
+                            </button>
+                        </div>
+                        <div class="replyInput" style="display: block;">
+                            <div class="card_sendComment">
+                                <form class="comment">
+                                    <div class="input-groub d-flex">
+                                        <input class="form-control me-2" placeholder="اكتب ردك هنا"></input>
+                                        <button>
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Nested Replies -->
@@ -76,30 +91,20 @@
                             <div class="replyInput" style="display: block;">
                                 <div class="card_sendComment">
                                     <form class="comment">
-                                        <div class="input-groub">
-                                            <textarea placeholder="اكتب ردك هنا"></textarea>
+                                        <div class="input-groub d-flex">
+                                            <input class="form-control me-2" placeholder="اكتب ردك هنا"></input>
+                                            <button>
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
                                         </div>
-                                        <button>
-                                            <i class="fas fa-paper-plane"></i>
-                                        </button>
+
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="replyInput" style="display: block;">
-                        <div class="card_sendComment">
-                            <form class="comment">
-                                <div class="input-groub">
-                                    <textarea placeholder="اكتب ردك هنا"></textarea>
-                                </div>
-                                <button>
-                                    <i class="fas fa-paper-plane"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
